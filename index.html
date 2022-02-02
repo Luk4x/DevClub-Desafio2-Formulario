@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,88 +9,84 @@
     <link rel="shortcut icon" href="./assets/faviconluk4x.ico" type="image/x-icon">
     <title>Formulário</title>
 </head>
+
 <body>
-    <form action="luk4xm4ci3l@gmail.com" method="POST">
+    <form action="" method="POST" enctype="multipart/form-data">
         <fieldset>
-            <legend style="margin: auto;">Cadastro</legend>
+            <legend>Cadastro</legend>
+
+            <label for="username">Nome</label><br>
+            <input name="username" id="username" type="text" autofocus required>
+            <br><br>
+
+            <label for="useremail">Email</label><br>
+            <input name="useremail" id="useremail" type="email" required>
+            <br><br>
+
+            <label for="age">Idade</label><br>
+            <input name="age" id="age" type="number" min="12" required>
+            <br><br>
+
+            <label for="date">Data de Nascimento</label><br>
+            <input name="date" id="date" type="date" required>
+            <br><br>
+
             <label>
-                Nome <br>
-                <input name="username" type="text" autofocus required>
+                Onde você possui conta:<br>
+                <input name="instagram" id="instagram" type="checkbox">
+                <label for="instagram">Instagram</label>
+                <input name="facebook" id="facebook" type="checkbox">
+                <label for="facebook">Facebook</label>
+                <input name="youtube" id="youtube" type="checkbox">
+                <label for="youtube">Youtube</label>
             </label>
             <br><br>
+
             <label>
-                Email <br>
-                <input name="useremail" type="email" required>
+                Sexo:<br>
+                <input name="gender" id="masculino" type="radio">
+                <label for="masculino">Masculino</label>
+                <input name="gender" id="feminino" type="radio">
+                <label for="feminino">Feminino</label>
             </label>
             <br><br>
-            <label>
-                Idade <br>
-                <input name="age" type="number" min="12" style="width: 40px;" required>
-            </label>
+
+            <label for="eye-color">Cor dos Olhos:</label>
+            <input name="eye-color" id="eye-color" type="color" value="#444444">
             <br><br>
-            <label>
-                Data de Nascimento <br>
-                <input name="date" type="date" required>
-            </label>
+
+            <label for="biography">Biografia:</label><br>
+            <textarea name="biography" id="biography" required></textarea>
             <br><br>
-            <label>
-                Onde você possui conta: <br>
-                <input name="instagram" type="checkbox">Instagram
-                <input name="facebook" type="checkbox">Facebook
-                <input name="youtube" type="checkbox">Youtube
-            </label>
+
+            <label for="profile-photo">Foto do perfil:</label><br>
+            <input name="profile-photo" id="profile-photo" type="file" accept="image/*" required>
             <br><br>
-            <label>
-                Sexo: <br>
-                <input name="gen" type="radio">Masculino
-                <input name="gen" type="radio">Feminino
-            </label>
+
+            <label for="tel-number">Telefone:</label><br>
+            <input name="tel-number" id="tel-number" type="tel" required>
             <br><br>
-            <label>
-                Cor dos Olhos:
-                <input name="eye-color" type="color" value="#444444"
-            </label>
+
+            <label for="facebook-profile">Link do perfil do Facebook:</label><br>
+            <input name="facebook-profile" id="facebook-profile" type="url" required>
             <br><br>
-            <label>
-                Biografia: <br>
-                <textarea name="biography" required></textarea>
-            </label>
+
+            <label for="password">Senha:</label><br>
+            <input name="password" id="password" type="password" minlength="6" maxlength="8" required>
             <br><br>
-            <label>
-                Foto do perfil: <br>
-                <input name="profile-photo" type="file" accept="image/*" required>
-            </label>
+
+            <label for="animes">Animes assistidos:</label><br>
+            <input name="animes" id="animes" type="number" readonly value="412">
             <br><br>
-            <label>
-                Telefone: <br>
-                <input name="tel-number" type="tel" required>
-            </label>
+
+            <label for="mood">Como está o seu humor:</label><br>
+            0<input name="mood" id="mood" type="range" min="0" max="10" step="1" value="5">10
             <br><br>
-            <label>
-                Link do perfil do Facebook <br>
-                <input name="facebook-profile" type="url" required>
-            </label>
-            <br><br>
-            <label>
-                Senha: <br>
-                <input name="password" type="password" minlength="6" maxlength="8" required>
-            </label>
-            <br><br>
-            <label>
-                Animes assistidos: <br>
-                <input type="number" readonly value="412">
-            </label>
-            <br><br>
-            <label>
-                Alterar tonalidade do background:
-                <input id="bg-range" type="rage" min="0" max="1" step="0.1">
-            </label>
+
             <button name="btn-reset" type="reset">Limpar</button>
             <button name="btn-submit" type="submit">Enviar Dados</button>
         </fieldset>
     </form>
 </body>
-<script>
-    document.getElementById("bg-range")
-</script>
+
 </html>
