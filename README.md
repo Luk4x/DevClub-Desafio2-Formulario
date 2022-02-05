@@ -1,2 +1,2 @@
 # DevClub-Desafio2-Formulario
-Formulário utilizando apenas HTML - DevClub
+Formulário introdutório à HTML e CSS - DevClub
