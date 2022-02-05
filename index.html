@@ -7,85 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lucas Maciel Francisco (Luk4x)">
     <link rel="shortcut icon" href="./assets/faviconluk4x.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
     <title>Formulário</title>
 </head>
-
 <body>
     <form action="" method="POST" enctype="multipart/form-data">
-        <fieldset>
-            <legend>Cadastro</legend>
+        <h1>Cadastro</h1>
 
-            <label for="username">Nome</label><br>
-            <input name="username" id="username" type="text" autofocus required>
-            <br><br>
+        <label for="username">Nome</label>
+        <input name="username" id="username" type="text" autofocus required>
 
-            <label for="useremail">Email</label><br>
-            <input name="useremail" id="useremail" type="email" required>
-            <br><br>
+        <label for="useremail">Email</label>
+        <input name="useremail" id="useremail" type="email" required>
 
-            <label for="age">Idade</label><br>
-            <input name="age" id="age" type="number" min="12" required>
-            <br><br>
+        <label for="age">Idade</label>
+        <input name="age" id="age" type="number" min="12" required>
 
-            <label for="date">Data de Nascimento</label><br>
-            <input name="date" id="date" type="date" required>
-            <br><br>
+        <label for="date">Data de Nascimento</label>
+        <input name="date" id="date" type="date" required>
 
-            <label>
-                Onde você possui conta:<br>
-                <input name="instagram" id="instagram" type="checkbox">
-                <label for="instagram">Instagram</label>
-                <input name="facebook" id="facebook" type="checkbox">
-                <label for="facebook">Facebook</label>
-                <input name="youtube" id="youtube" type="checkbox">
-                <label for="youtube">Youtube</label>
-            </label>
-            <br><br>
+        <label>
+            <p>Onde você possui conta:</p>
+            <input class="inline" name="instagram" id="instagram" type="checkbox">
+            <label class="inline" for="instagram">Instagram</label>
+            <input class="inline" name="facebook" id="facebook" type="checkbox">
+            <label class="inline" for="facebook">Facebook</label>
+            <input class="inline" name="youtube" id="youtube" type="checkbox">
+            <label class="inline" for="youtube">Youtube</label>
+        </label>
 
-            <label>
-                Sexo:<br>
-                <input name="gender" id="masculino" type="radio">
-                <label for="masculino">Masculino</label>
-                <input name="gender" id="feminino" type="radio">
-                <label for="feminino">Feminino</label>
-            </label>
-            <br><br>
+        <label>
+            <p>Sexo:</p>
+            <input class="inline" name="gender" id="masculino" type="radio">
+            <label class="inline" for="masculino">Masculino</label>
+            <input class="inline" name="gender" id="feminino" type="radio">
+            <label class="inline" for="feminino">Feminino</label>
+        </label>
 
-            <label for="eye-color">Cor dos Olhos:</label>
-            <input name="eye-color" id="eye-color" type="color" value="#444444">
-            <br><br>
+        <label class="inline" for="eye-color">Cor dos Olhos:</label>
+        <input class="inline" name="eye-color" id="eye-color" type="color" value="#444444">
 
-            <label for="biography">Biografia:</label><br>
-            <textarea name="biography" id="biography" required></textarea>
-            <br><br>
+        <label for="biography">Biografia:</label>
+        <textarea name="biography" id="biography" required></textarea>
 
-            <label for="profile-photo">Foto do perfil:</label><br>
-            <input name="profile-photo" id="profile-photo" type="file" accept="image/*" required>
-            <br><br>
+        <label for="profile-photo">Foto do perfil:</label>
+        <input name="profile-photo" id="profile-photo" type="file" accept="image/*" required>
 
-            <label for="tel-number">Telefone:</label><br>
-            <input name="tel-number" id="tel-number" type="tel" required>
-            <br><br>
+        <label for="tel-number">Telefone:</label>
+        <input name="tel-number" id="tel-number" type="tel" required>
 
-            <label for="facebook-profile">Link do perfil do Facebook:</label><br>
-            <input name="facebook-profile" id="facebook-profile" type="url" required>
-            <br><br>
+        <label for="facebook-profile">Link do perfil do Facebook:</label>
+        <input name="facebook-profile" id="facebook-profile" type="url" required>
 
-            <label for="password">Senha:</label><br>
-            <input name="password" id="password" type="password" minlength="6" maxlength="8" required>
-            <br><br>
+        <label for="password">Senha:</label>
+        <input name="password" id="password" type="password" minlength="6" maxlength="8" required>
+        
+        <label for="animes">Animes assistidos:</label>
+        <input name="animes" id="animes" type="number" readonly value="412">
 
-            <label for="animes">Animes assistidos:</label><br>
-            <input name="animes" id="animes" type="number" readonly value="412">
-            <br><br>
-
-            <label for="mood">Como está o seu humor:</label><br>
-            0<input name="mood" id="mood" type="range" min="0" max="10" step="1" value="5">10
-            <br><br>
-
-            <button name="btn-reset" type="reset">Limpar</button>
-            <button name="btn-submit" type="submit">Enviar Dados</button>
-        </fieldset>
+        <button name="btn-reset" type="reset">Limpar</button>
+        <button name="btn-submit" type="submit">Enviar Dados</button>
     </form>
 </body>
 
